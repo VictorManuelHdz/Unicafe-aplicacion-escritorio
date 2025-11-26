@@ -1,0 +1,169 @@
+﻿namespace pryCafeteriaUTHH
+{
+    partial class frmProductos
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            dvgInventario = new DataGridView();
+            txtNombreProducto = new TextBox();
+            label6 = new Label();
+            btnAgregar = new Button();
+            cmbCategorias = new ComboBox();
+            label8 = new Label();
+            label1 = new Label();
+            txtDescripcion = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)dvgInventario).BeginInit();
+            SuspendLayout();
+            // 
+            // dvgInventario
+            // 
+            dvgInventario.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 14F);
+            dvgInventario.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dvgInventario.BackgroundColor = Color.FromArgb(239, 228, 210);
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Control;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dvgInventario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dvgInventario.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dvgInventario.Location = new Point(329, 273);
+            dvgInventario.Name = "dvgInventario";
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(233, 237, 201);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dvgInventario.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dvgInventario.Size = new Size(1333, 443);
+            dvgInventario.TabIndex = 8;
+            // 
+            // txtNombreProducto
+            // 
+            txtNombreProducto.BackColor = Color.White;
+            txtNombreProducto.Font = new Font("Segoe UI", 14F);
+            txtNombreProducto.Location = new Point(968, 24);
+            txtNombreProducto.Name = "txtNombreProducto";
+            txtNombreProducto.Size = new Size(235, 32);
+            txtNombreProducto.TabIndex = 9;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Location = new Point(761, 32);
+            label6.Name = "label6";
+            label6.Size = new Size(163, 25);
+            label6.TabIndex = 10;
+            label6.Text = "Nombre Producto";
+            // 
+            // btnAgregar
+            // 
+            btnAgregar.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAgregar.Location = new Point(1020, 186);
+            btnAgregar.Name = "btnAgregar";
+            btnAgregar.Size = new Size(116, 48);
+            btnAgregar.TabIndex = 12;
+            btnAgregar.Text = "Agregar";
+            btnAgregar.UseVisualStyleBackColor = true;
+            btnAgregar.Click += btnAgregar_Click;
+            // 
+            // cmbCategorias
+            // 
+            cmbCategorias.Font = new Font("Segoe UI", 14F);
+            cmbCategorias.FormattingEnabled = true;
+            cmbCategorias.Location = new Point(968, 125);
+            cmbCategorias.Name = "cmbCategorias";
+            cmbCategorias.Size = new Size(235, 33);
+            cmbCategorias.TabIndex = 22;
+            cmbCategorias.TabStop = false;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 14F);
+            label8.Location = new Point(830, 133);
+            label8.Name = "label8";
+            label8.Size = new Size(94, 25);
+            label8.TabIndex = 21;
+            label8.Text = "Categoría";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(813, 82);
+            label1.Name = "label1";
+            label1.Size = new Size(111, 25);
+            label1.TabIndex = 10;
+            label1.Text = "Descripción";
+            // 
+            // txtDescripcion
+            // 
+            txtDescripcion.BackColor = Color.White;
+            txtDescripcion.Font = new Font("Segoe UI", 14F);
+            txtDescripcion.Location = new Point(968, 75);
+            txtDescripcion.Name = "txtDescripcion";
+            txtDescripcion.Size = new Size(235, 32);
+            txtDescripcion.TabIndex = 9;
+            // 
+            // frmProductos
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(239, 228, 210);
+            ClientSize = new Size(1904, 728);
+            Controls.Add(cmbCategorias);
+            Controls.Add(label8);
+            Controls.Add(btnAgregar);
+            Controls.Add(txtDescripcion);
+            Controls.Add(label1);
+            Controls.Add(txtNombreProducto);
+            Controls.Add(label6);
+            Controls.Add(dvgInventario);
+            Name = "frmProductos";
+            Text = "frmInventario";
+            ((System.ComponentModel.ISupportInitialize)dvgInventario).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private DataGridView dvgInventario;
+        private TextBox txtNombreProducto;
+        private Label label6;
+        private Button btnAgregar;
+        private ComboBox cmbCategorias;
+        private Label label8;
+        private Label label1;
+        private TextBox txtDescripcion;
+    }
+}
