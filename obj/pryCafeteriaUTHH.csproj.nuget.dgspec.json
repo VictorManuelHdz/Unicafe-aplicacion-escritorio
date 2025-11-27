@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\victo\\OneDrive\\Documentos\\broder\\3er Cuatrimestre\\POO\\cuatri 3\\Parcial 2\\pryCafeteriaUTHH\\pryCafeteriaUTHH.csproj": {}
+    "C:\\Users\\Mauro\\source\\repos\\Unicafe-aplicacion-escritorio\\pryCafeteriaUTHH.csproj": {}
   },
   "projects": {
-    "C:\\Users\\victo\\OneDrive\\Documentos\\broder\\3er Cuatrimestre\\POO\\cuatri 3\\Parcial 2\\pryCafeteriaUTHH\\pryCafeteriaUTHH.csproj": {
+    "C:\\Users\\Mauro\\source\\repos\\Unicafe-aplicacion-escritorio\\pryCafeteriaUTHH.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\victo\\OneDrive\\Documentos\\broder\\3er Cuatrimestre\\POO\\cuatri 3\\Parcial 2\\pryCafeteriaUTHH\\pryCafeteriaUTHH.csproj",
+        "projectUniqueName": "C:\\Users\\Mauro\\source\\repos\\Unicafe-aplicacion-escritorio\\pryCafeteriaUTHH.csproj",
         "projectName": "pryCafeteriaUTHH",
-        "projectPath": "C:\\Users\\victo\\OneDrive\\Documentos\\broder\\3er Cuatrimestre\\POO\\cuatri 3\\Parcial 2\\pryCafeteriaUTHH\\pryCafeteriaUTHH.csproj",
-        "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victo\\OneDrive\\Documentos\\broder\\3er Cuatrimestre\\POO\\cuatri 3\\Parcial 2\\pryCafeteriaUTHH\\obj\\",
+        "projectPath": "C:\\Users\\Mauro\\source\\repos\\Unicafe-aplicacion-escritorio\\pryCafeteriaUTHH.csproj",
+        "packagesPath": "C:\\Users\\Mauro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mauro\\source\\repos\\Unicafe-aplicacion-escritorio\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Mauro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,7 +40,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -74,7 +70,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
