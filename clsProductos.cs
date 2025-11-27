@@ -14,6 +14,7 @@ namespace pryCafeteriaUTHH
         private string nombreProducto;
         private string descripcion;
         private int idCategoria;
+        private string rfcProveedor;
 
         // Crear tabla virtual para almacenar los datos
         DataTable tabla;
@@ -36,6 +37,7 @@ namespace pryCafeteriaUTHH
             }
         }
         public int IdCategoria { get => idCategoria; set => idCategoria = value; }
+        public string RfcProveedor { get => rfcProveedor; set => rfcProveedor = value; }
         public string Descripcion 
         { 
             get => descripcion; 
@@ -48,6 +50,8 @@ namespace pryCafeteriaUTHH
                 descripcion = value;
             }
         }
+
+        
 
         // Metodos o funciones
         public DataTable CargarDataGrid()
@@ -94,7 +98,29 @@ namespace pryCafeteriaUTHH
             }
             return tablaCategorias;
         }
+        public DataTable CargarcmbProveedores()
+        {
+            DataTable tablaProveedores = new DataTable();
+            try
+            {
+                clsConexion conexionBD = new clsConexion();
+              
+                using (var conexion = conexionBD.AbrirConexion())
+                {
+                    string sql = "SELECT vchRFC, vchNombres FROM tblproveedores";
+                    using (var consulta = new MySqlDataAdapter(sql, conexion))
+                    {
+                        consulta.Fill(tablaProveedores);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message, ex);
+            }
+            return tablaProveedores;
 
+        }
         public string Agregar()
         {
             string salida = "";
@@ -106,11 +132,12 @@ namespace pryCafeteriaUTHH
 
                 using (var conexion = conexionBD.AbrirConexion())
                 {
-                    string sql = "INSERT INTO tblproductos (vchNombre, vchDescripcion, intStock, intIdCategoria, vchRFCProveedor, decPrecioCompra, decPrecioVenta) VALUES (@nombreProducto, @descripcion, 0, @idCategoria, '---', 0.00, 0.00);";
+                    string sql = "INSERT INTO tblproductos (vchNombre, vchDescripcion, intStock, intIdCategoria, vchRFCProveedor, decPrecioCompra, decPrecioVenta) VALUES (@nombreProducto, @descripcion, 0, @idCategoria, @rfcProveedor, 0.00, 0.00);";
                     insertar = new MySqlCommand(sql, conexion);
                     insertar.Parameters.AddWithValue("@nombreProducto", nombreProducto);
                     insertar.Parameters.AddWithValue("@descripcion", descripcion);
                     insertar.Parameters.AddWithValue("@idCategoria", idCategoria);
+                    insertar.Parameters.AddWithValue("@rfcProveedor", rfcProveedor);
 
                     int filasAfectadas = insertar.ExecuteNonQuery();
                     if (filasAfectadas > 0)
