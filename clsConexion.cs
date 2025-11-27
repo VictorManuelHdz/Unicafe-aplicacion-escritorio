@@ -11,8 +11,8 @@ namespace pryCafeteriaUTHH
     {
         // Cadena de conexión a la base de datos
         //private readonly string cadenaConexion = "server=localhost;database=bdunicafe;user=root;";
-        private readonly string cadenaConexion = "server=146.59.154.144;database=s1510_unicafe;user=u1510_Yw1wzgS1cb;password=s=@Dg^O3SWhynFr1x4q04M+n;";
-
+        //private readonly string cadenaConexion = "server=146.59.154.144;database=s1510_unicafe;user=u1510_Yw1wzgS1cb;password=s=@Dg^O3SWhynFr1x4q04M+n;";
+        private readonly string cadenaConexion = "server=82.180.172.154;database=u138650717_Unicafe;user=u138650717_Unicafe;password=kC$Xsa$1;";
         // Funcion para conectar a la base de datos
         public MySqlConnection AbrirConexion()
         {

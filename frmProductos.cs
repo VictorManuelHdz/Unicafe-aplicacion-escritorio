@@ -18,12 +18,17 @@ namespace pryCafeteriaUTHH
             InitializeComponent();
             inventario = new clsProductos();
             cmbCategorias.DataSource = null;
+            cmbProveedores.DataSource = null;
             dvgInventario.DataSource = null;
             try
             {
                 cmbCategorias.DataSource = inventario.CargarComboCategorias();
                 cmbCategorias.DisplayMember = "vchCategoria";
                 cmbCategorias.ValueMember = "intIdCategoria";
+                //cargar el cobo de provvedores
+                cmbProveedores.DataSource = inventario.CargarcmbProveedores();
+                cmbProveedores.DisplayMember = "vchNombres";
+                cmbProveedores.ValueMember = "vchrfc";
                 // Carga el GridView
                 dvgInventario.DataSource = inventario.CargarDataGrid();
                 dvgInventario.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -42,6 +47,8 @@ namespace pryCafeteriaUTHH
                 inventario.NombreProducto = txtNombreProducto.Text;
                 inventario.Descripcion = txtDescripcion.Text;
                 inventario.IdCategoria = int.Parse(cmbCategorias.SelectedValue.ToString());
+                inventario.RfcProveedor = cmbProveedores.SelectedValue.ToString();
+
 
                 MessageBox.Show(inventario.Agregar(), "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
